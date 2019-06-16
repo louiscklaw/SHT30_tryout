@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:SHT30_tryout-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 8500 5500
@@ -1600,9 +1601,9 @@ Wire Wire Line
 Wire Wire Line
 	2050 2250 2300 2250
 Connection ~ 2300 2250
-Text Label 4900 2050 2    50   ~ 0
+Text Label 4750 2050 2    50   ~ 0
 SCL
-Text Label 4900 2250 2    50   ~ 0
+Text Label 4750 2250 2    50   ~ 0
 SDA
 Text Label 1850 2050 1    50   ~ 0
 SCL
@@ -1641,32 +1642,22 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0110
 U 1 1 5CFBE976
-P 1650 3350
-F 0 "#PWR0110" H 1650 3200 50  0001 C CNN
-F 1 "+3V3" H 1665 3523 50  0000 C CNN
-F 2 "" H 1650 3350 50  0001 C CNN
-F 3 "" H 1650 3350 50  0001 C CNN
-	1    1650 3350
-	-1   0    0    1   
+P 1800 2350
+F 0 "#PWR0110" H 1800 2200 50  0001 C CNN
+F 1 "+3V3" H 1815 2523 50  0000 C CNN
+F 2 "" H 1800 2350 50  0001 C CNN
+F 3 "" H 1800 2350 50  0001 C CNN
+	1    1800 2350
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 3350 1650 3050
-Wire Wire Line
-	1650 3050 1450 3050
+	1800 2350 1800 2650
 Text Label 1800 2850 2    50   ~ 0
-NRST
-Text Label 1800 2950 2    50   ~ 0
-ALERT
-Wire Wire Line
-	1450 2850 1800 2850
-Wire Wire Line
-	1450 2950 1800 2950
-Text Label 1800 2650 2    50   ~ 0
 SCL
 Text Label 1800 2750 2    50   ~ 0
 SDA
 Wire Wire Line
-	1450 2650 1800 2650
+	1450 2850 1800 2850
 Wire Wire Line
 	1450 2750 1800 2750
 Wire Wire Line
@@ -3076,4 +3067,18 @@ DC 01 00 00 00 95 43 B8 03 00 00 00 2A 87 70 07 00 00 00 54 0E E1 0E 00 00 00 A8
 0F 6A E8 50 53 6F 85 DB 37 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Text HLabel 4900 2050 2    50   Input ~ 0
+SCL
+Text HLabel 4900 2250 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	1450 2650 1800 2650
+Wire Wire Line
+	1450 2950 1800 2950
+Wire Wire Line
+	1450 3050 1800 3050
+Text Label 1800 2950 2    50   ~ 0
+ALERT
+Text Label 1800 3050 2    50   ~ 0
+NRST
 $EndSCHEMATC
