@@ -1482,8 +1482,8 @@ $Comp
 L my_solder_jumper:SolderJumper_2_Open_round JP1
 U 1 1 5CFA372A
 P 1900 1000
-F 0 "JP1" V 1854 1068 50  0000 L CNN
-F 1 "SolderJumper_2_Open_round" V 1945 1068 50  0000 L CNN
+F 0 "JP1" V 1850 900 50  0000 R CNN
+F 1 "SCL_SDA" V 1900 900 50  0000 R CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1900 1000 50  0001 C CNN
 F 3 "~" H 1900 1000 50  0001 C CNN
 	1    1900 1000
@@ -1607,12 +1607,12 @@ Text Label 4750 2250 2    50   ~ 0
 SDA
 Text Label 1850 2050 1    50   ~ 0
 SCL
-Text Label 2150 2050 1    50   ~ 0
+Text Label 1950 2050 1    50   ~ 0
 SDA
 Wire Wire Line
 	1850 1700 1850 2050
 Wire Wire Line
-	2150 1700 2150 2050
+	1950 1700 1950 2050
 $Comp
 L Connector:Conn_01x06_Female J1
 U 1 1 5CFBB0DE
@@ -1671,9 +1671,7 @@ Connection ~ 2100 1200
 Wire Wire Line
 	2100 1200 2150 1200
 Wire Wire Line
-	1950 1850 3100 1850
-Wire Wire Line
-	1950 1700 1950 1850
+	2150 1850 3100 1850
 $Bitmap
 Pos -1000 4000
 Scale 1.000000
@@ -3081,4 +3079,6 @@ Text Label 1800 2950 2    50   ~ 0
 ALERT
 Text Label 1800 3050 2    50   ~ 0
 NRST
+Wire Wire Line
+	2150 1700 2150 1850
 $EndSCHEMATC
